@@ -63,9 +63,9 @@ public class SuperTrunfo {
        int i=0;
        while(true) {
            System.out.println("PONTOS: \n");
-           System.out.println("VocÃª: "+pontosPlayer);
-           System.out.println("AdversÃ¡rio: "+pontosRival+"\n");
-           System.out.println("VocÃª tem "+(10-pontosRival) +" cartas");
+           System.out.println("Você: "+pontosPlayer);
+           System.out.println("Adversário: "+pontosRival+"\n");
+           System.out.println("Você tem "+(10-pontosRival) +" cartas");
            System.out.println("-----------------------------");
            System.out.println("Nome: " + player.get(0).getNomeCarta());    
            System.out.println("Cilindradas:  " + player.get(0).getCilindradas());
@@ -87,16 +87,16 @@ public class SuperTrunfo {
            i++;           
            if((10-pontosRival) == 0){
                 System.out.println("\nFIM DE JOGO!");
-                System.out.println("VocÃª: "+pontosPlayer);
-                System.out.println("AdversÃ¡rio: "+pontosRival);
-                System.out.println("\nVocÃª perdeu :( ");
+                System.out.println("Você: "+pontosPlayer);
+                System.out.println("Adversárioo: "+pontosRival);
+                System.out.println("\nVocê perdeu :( ");
                  break;
            }
            else if(pontosPlayer == 10){             
                 System.out.println("\nFIM DE JOGO!");
-                System.out.println("VocÃª: "+pontosPlayer);
-                System.out.println("AdversÃ¡rio: "+pontosRival);
-                System.out.println("\nParabÃ©ns vocÃª ganhou o jogo:)");
+                System.out.println("Você: "+pontosPlayer);
+                System.out.println("Adversário: "+pontosRival);
+                System.out.println("\nParabéns você ganhou o jogo:)");
                 break; 
                 
            }          
