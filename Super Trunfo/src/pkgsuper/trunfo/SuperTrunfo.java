@@ -68,9 +68,9 @@ public class SuperTrunfo {
            System.out.println("Você tem "+(10-pontosRival) +" cartas");
            System.out.println("-----------------------------");
            System.out.println("Nome: " + player.get(0).getNomeCarta());    
-           System.out.println("Cilindradas:  " + player.get(0).getCilindradas());
-           System.out.println("Potencia: " + player.get(0).getPotencia());
-           System.out.println("Velocidade: " + player.get(0).getVelocidadeMaxima()); 
+           System.out.println("Cilindradas:  " + player.get(0).getCilindradas()+" cc");
+           System.out.println("Potencia: " + player.get(0).getPotencia()+" CV");
+           System.out.println("Velocidade: " + player.get(0).getVelocidadeMaxima()+" KM/H"); 
            System.out.println("-----------------------------");
            System.out.println("Rodada "+(i+1)+"\nVc ganhou???");
            res = resposta.nextLine();        
@@ -90,7 +90,7 @@ public class SuperTrunfo {
                 System.out.println("Você: "+pontosPlayer);
                 System.out.println("Adversárioo: "+pontosRival);
                 System.out.println("\nVocê perdeu :( ");
-                 break;
+                break;
            }
            else if(pontosPlayer == 10){             
                 System.out.println("\nFIM DE JOGO!");
