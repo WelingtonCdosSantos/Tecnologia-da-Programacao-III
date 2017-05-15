@@ -43,7 +43,7 @@ public class MenorMaior extends Jogo implements JogoInterface {
     @Override
     public void abortar(Placar p, Jogo jogo) {
         System.out.println("\nInfelizmente você perdeu");
-        p.exibirPlacar(p, jogo);
+        p.exibirPlacar(p,((MenorMaior) jogo));
     }   
     
 }

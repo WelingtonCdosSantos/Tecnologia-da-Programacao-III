@@ -41,14 +41,14 @@ public class Jogo{
         if(jogo instanceof MenorMaior){                      
             ((MenorMaior) jogo).jogar(p);           
             if(p.ganho == true){
-                p.exibirPlacar(p, jogo);
+                p.exibirPlacar(p, ((MenorMaior) jogo));
             }else{
                  ((MenorMaior) jogo).abortar(p,jogo);
             }             
         }else{ 
             ((CaraCoroa) jogo).jogar(p);
             if(p.ganho == true){
-                p.exibirPlacar(p, jogo);
+                p.exibirPlacar(p);
             }else{
                  ((CaraCoroa) jogo).abortar(p,jogo);
             }     

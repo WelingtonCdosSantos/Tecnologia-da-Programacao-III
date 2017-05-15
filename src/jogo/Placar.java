@@ -10,17 +10,27 @@ public class Placar{
         this.tentativas = pontuacao;
         this.ganho = ganho;
     }
-    
-    public void exibirPlacar(Placar p, Jogo jogo){
-        if(jogo instanceof MenorMaior){
-            if(p.ganho == true){
+    public void exibirPlacar(Placar p, MenorMaior jogo){
+        if(p.ganho == true){
                 System.out.println("\nParabéns "+p.j.nome+" você acertou após "+p.tentativas+ " tentativa(s)!!");
-            }else{
-                System.out.println(p.j.nome+" você tentou "+p.tentativas+" vez(es)");
-            }
         }else{
-            System.out.println("\n"+p.j.nome+" você acertou "+p.acertos+" em "+p.tentativas+" tentativa(s)!!"); 
+                System.out.println(p.j.nome+" você tentou "+p.tentativas+" vez(es)");
         }
     }
+    public void exibirPlacar(Placar p){
+         System.out.println("\n"+p.j.nome+" você acertou "+p.acertos+" em "+p.tentativas+" tentativa(s)!!"); 
+    }
+    
+//    public void exibirPlacar(Placar p, Jogo jogo){
+//        if(jogo instanceof MenorMaior){
+//            if(p.ganho == true){
+//                System.out.println("\nParabéns "+p.j.nome+" você acertou após "+p.tentativas+ " tentativa(s)!!");
+//            }else{
+//                System.out.println(p.j.nome+" você tentou "+p.tentativas+" vez(es)");
+//            }
+//        }else{
+//            System.out.println("\n"+p.j.nome+" você acertou "+p.acertos+" em "+p.tentativas+" tentativa(s)!!"); 
+//        }
+//    }
  
 }

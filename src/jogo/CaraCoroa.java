@@ -47,6 +47,6 @@ public class CaraCoroa extends Jogo implements JogoInterface{
     @Override
     public void abortar(Placar p,Jogo jogo) {
         System.out.println("\nVocê saiu do jogo");
-        p.exibirPlacar(p, jogo);
+        p.exibirPlacar(p);
     }  
 }
